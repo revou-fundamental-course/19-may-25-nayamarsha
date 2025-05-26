@@ -1,11 +1,11 @@
 body {
     justify-items: center;
-    background-color: antiquewhite;
+    background-color: powderblue;
     font-family: monospace;
 }
 
 main {
-        background-color: azure;
+        background-color: aliceblue;
         padding: 24px;
         border-radius: 8px;
 }
@@ -38,15 +38,15 @@ button {
     padding: 16px;
 }
 
-.bg-lightseagreen {
-    background-color: lightseagreen;
+.bg-cornflowerblue {
+    background-color: cornflowerblue;
 }
 
-.bg-lightcoral {
-    background-color: lightcoral;
+.bg-indianred {
+    background-color: indianred;
 }
 
-.bg-lightblue {
-    background-color: lightblue;
+.bg-cadetblue {
+    background-color: cadetblue;
 }
 /* Global Usage */
