@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputsuhu = document.getElementById('input-suhu');
     const hasilsuhu = document.getElementById('hasil-suhu');
     const detailsuhu = document.getElementById('detail-suhu');
+    const instructionText = document.getElementById('introduction');
 
     const konversi = document.getElementById('konversi');
     const reset = document.getElementById('reset');
@@ -42,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector('label[for="input-suhu"]').innerHTML = isReversed ? 'Fahrenheit (&deg;F)' : 'Celcius (&deg;C)';
         document.querySelector('label[for="hasil-suhu"]').innerHTML = isReversed ? 'Celcius (&deg;C)' : 'Fahrenheit (&deg;F)';
+
+        instructionText.textContent = isReversed
+        ? 'Masukkan suhu derajat Fahrenheit \u00B0F ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Celcius \u00B0C'
+        : 'Masukkan suhu derajat Celcius \u00B0C ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit \u00B0F';
 
         inputsuhu.value = '';
         hasilsuhu.value = '';
